@@ -37,8 +37,6 @@ public class PlayerController : MonoBehaviour
             moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
             moveDirection *= speed;
 
-            Debug.Log(moveDirection);
-
             if (Input.GetButton("Jump")) moveDirection.y = jumpSpeed;
 
             if (inclined == false)
@@ -103,7 +101,17 @@ public class PlayerController : MonoBehaviour
     {
         inclined = (hit.normal.y < 0.99) ? true : false; 
 
-        if (hit.gameObject.tag == "Springboard") isBounced = true;
+        GameObject currentObject = hit.gameObject;
+        
+        if (currentObject.tag == "Springboard") 
+        {
+            isBounced = true;
+
+            Debug.Log(currentObject.transform);
+
+            //currentObject.MoveTo(new Vector3(-1.320549F, -6.143249F, 8.285074F), 0.15F, 0, EaseType.easeOutBack);
+        }
+
         if (hit.gameObject.tag == "Portal") Debug.Log("CHECKPOINT #1");
     }
 }
