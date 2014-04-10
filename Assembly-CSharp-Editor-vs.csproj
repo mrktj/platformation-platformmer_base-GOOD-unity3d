@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{9DD28949-61CE-1490-CFE5-AE03C5257385}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_OSX;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_GAMECENTER;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_4;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\6by7\ProBuilder\Editor\MenuItems\Actions\DeleteNoDrawFaces.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\MenuItems\Actions\ExportObj.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\MenuItems\Actions\MakeAsset.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\MenuItems\Actions\ProBuilderizeGameObject.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\MenuItems\Actions\StripProBuilderScripts.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\MenuItems\Geometry\Bridge.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\MenuItems\Geometry\ConnectEdges.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\MenuItems\Geometry\DetachDeleteFace.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\MenuItems\Geometry\ExtrudeFace.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\MenuItems\Geometry\FlipFaces.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\MenuItems\Geometry\PivotTool.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\MenuItems\Geometry\VertexMergeWeld.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\MenuItems\Repair\CleanUpLeakedMeshes.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\MenuItems\Repair\ComponentCheck.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\MenuItems\Repair\DegenerateTris.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\MenuItems\Repair\FixGameObjectFlags.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\MenuItems\Repair\ForceMeshRefresh.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\MenuItems\Repair\RebuildSharedIndices.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\MenuItems\Repair\SetProjectionAxis.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\MenuItems\Selection\EdgeSelection.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\MenuItems\Selection\ExpandSelection.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\MenuItems\Selection\InvertSelection.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\MenuItems\Tools\AutoNodraw.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\MenuItems\Tools\ProjectNodrawUtil.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\MenuItems\Tools\SelectFacesWithMaterial.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\ProBuilderMenuItems.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\pb_About.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\pb_Preferences.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Install\Editor\QuickStart.cs" />
+     <Compile Include="Assets\6by7\ProGrids\Editor\pg_Constant.cs" />
+     <Compile Include="Assets\6by7\ProGrids\Editor\pg_Editor.cs" />
+     <Compile Include="Assets\6by7\ProGrids\Editor\pg_Preferences.cs" />
+     <Compile Include="Assets\Hard Surface Free\Editor\Reset Fresnel Reflection Value.cs" />
+     <Compile Include="Assets\ProCore\QuickBrush\Editor\qb_About.cs" />
+     <Compile Include="Assets\ProCore\QuickBrush\Editor\qb_Help.cs" />
+     <Compile Include="Assets\ProCore\QuickBrush\Editor\qb_Painter.cs" />
+     <Compile Include="Assets\ProCore\QuickBrush\Editor\qb_Window.cs" />
+     <Compile Include="Assets\ProCore\QuickDecals\Scripts\Editor\QuickDecals.cs" />
+     <None Include="Assets\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Cut Out Specular.shader" />
+     <None Include="Assets\game\materials\SpriteShadow.shader" />
+     <None Include="Assets\Hard Surface Free\HardSurface Shaders\HardSurface Free Cut Out Opaque Bump.shader" />
+     <None Include="Assets\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Transparent.shader" />
+     <None Include="Assets\6by7\ProBuilder\changelog.txt" />
+     <None Include="Assets\6by7\ProBuilder\Shader\VertexBillboard.shader" />
+     <None Include="Assets\6by7\ProBuilder\Shader\DiffuseVertexColor.shader" />
+     <None Include="Assets\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Transparent Specular.shader" />
+     <None Include="Assets\Hard Surface Free\HardSurface Shaders\HardSurface Free Transparent Specular.shader" />
+     <None Include="Assets\Hard Surface Free\HardSurface Shaders\HardSurface Free Transparent Bump.shader" />
+     <None Include="Assets\6by7\ProBuilder\Shader\DiffuseVertexColorTransparency.shader" />
+     <None Include="Assets\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Cut Out Opaque Bump.shader" />
+     <None Include="Assets\Hard Surface Free\HardSurface Shaders\HardSurface Free Opaque.shader" />
+     <None Include="Assets\Hard Surface Free\HardSurface Shaders\HardSurface Free Cut Out Diffuse.shader" />
+     <None Include="Assets\6by7\ProGrids\VersionInfo.txt" />
+     <None Include="Assets\Hard Surface Free\HardSurface Shaders\HardSurface Free Cut Out Opaque Diffuse.shader" />
+     <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\6by7\ProBuilder\VersionInfo.txt" />
+     <None Include="Assets\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Opaque Bump.shader" />
+     <None Include="Assets\Hard Surface Free\HardSurface Shaders\HardSurface Free Transparent.shader" />
+     <None Include="Assets\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Opaque Diffuse.shader" />
+     <None Include="Assets\Hard Surface Free\HardSurface Shaders\HardSurface Free Transparent Diffuse.shader" />
+     <None Include="Assets\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Cut Out Diffuse.shader" />
+     <None Include="Assets\Hard Surface Free\HardSurface Shaders\HardSurface Free Opaque Diffuse.shader" />
+     <None Include="Assets\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Cut Out Opaque Specular.shader" />
+     <None Include="Assets\sky5X\README.txt" />
+     <None Include="Assets\Hard Surface Free\HardSurface Shaders\HardSurface Free Opaque Bump.shader" />
+     <None Include="Assets\6by7\ProBuilder\Shader\UnlitColor.shader" />
+     <None Include="Assets\6by7\ProBuilder\API Examples\Instantiation\README.txt" />
+     <None Include="Assets\Hard Surface Free\HardSurface Shaders\HardSurface Free Cut Out Opaque Specular.shader" />
+     <None Include="Assets\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Cut Out Bump.shader" />
+     <None Include="Assets\iTween\ReadMe!\ReadMe!.txt" />
+     <None Include="Assets\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Transparent Diffuse.shader" />
+     <None Include="Assets\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Opaque.shader" />
+     <None Include="Assets\Hard Surface Free\HardSurface Shaders\HardSurface Free Cut Out Specular.shader" />
+     <None Include="Assets\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Cut Out Opaque Diffuse.shader" />
+     <None Include="Assets\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Transparent Bump.shader" />
+     <None Include="Assets\6by7\ProBuilder\Shader\UnlitColor-Overlay.shader" />
+     <None Include="Assets\6by7\ProBuilder\Shader\DiffuseVertexColorEmission.shader" />
+     <None Include="Assets\Hard Surface Free\HardSurface Shaders\HardSurface Free Cut Out Bump.shader" />
+     <None Include="Assets\Hard Surface Free\HardSurface Shaders\HardSurface Free Opaque Specular.shader" />
+     <None Include="Assets\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Opaque Specular.shader" />
+     <None Include="Assets\Hard Surface Free\HardSurface Shaders\HardSurface SFX Depth Write Only.shader" />
+     <None Include="Assets\6by7\ProBuilder\Credits.txt" />
+ <Reference Include="Library\ScriptAssemblies\Assembly-UnityScript">
+ <HintPath>Library\ScriptAssemblies\Assembly-UnityScript.dll</HintPath>
+ </Reference>
+ <Reference Include="Assets\6by7\ProBuilder\Classes\ProBuilderCore">
+ <HintPath>Assets\6by7\ProBuilder\Classes\ProBuilderCore.dll</HintPath>
+ </Reference>
+ <Reference Include="Assets\6by7\ProBuilder\Editor\ProBuilderEditor">
+ <HintPath>Assets\6by7\ProBuilder\Editor\ProBuilderEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="Assets\6by7\Shared\Code\SixBySeven">
+ <HintPath>Assets\6by7\Shared\Code\SixBySeven.dll</HintPath>
+ </Reference>
+ <Reference Include="\Applications\Unity\Unity.app\Contents\Frameworks\Managed\UnityEditor.Graphs">
+ <HintPath>\Applications\Unity\Unity.app\Contents\Frameworks\Managed\UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="\Applications\Unity\Unity.app\Contents\PlaybackEngines\iPhonePlayer\EditorExtensions\UnityEditor.iOS.Extensions">
+ <HintPath>\Applications\Unity\Unity.app\Contents\PlaybackEngines\iPhonePlayer\EditorExtensions\UnityEditor.iOS.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="\Applications\Unity\Unity.app\Contents\PlaybackEngines\BB10Player\EditorExtensions\UnityEditor.BB10.Extensions">
+ <HintPath>\Applications\Unity\Unity.app\Contents\PlaybackEngines\BB10Player\EditorExtensions\UnityEditor.BB10.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="\Applications\Unity\Unity.app\Contents\PlaybackEngines\AndroidPlayer\EditorExtensions\UnityEditor.Android.Extensions">
+ <HintPath>\Applications\Unity\Unity.app\Contents\PlaybackEngines\AndroidPlayer\EditorExtensions\UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-vs.csproj">
+      <Project>{999A0253-C9CC-5266-D245-AEC4EF14C5DA}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
