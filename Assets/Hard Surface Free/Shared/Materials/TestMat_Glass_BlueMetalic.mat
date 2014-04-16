@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: TestMat_Glass_BlueMetalic
-  m_Shader: {fileID: 4800000, guid: c0096a96d54378848b8674c4703cd253, type: 3}
+  m_Shader: {fileID: 4800000, guid: 64ddac4260c4455419f609e5aca7da49, type: 3}
   m_ShaderKeywords: []
   m_CustomRenderQueue: -1
   m_SavedProperties:
@@ -52,31 +52,31 @@ Material:
       data:
         first:
           name: _Reflection
-        second: .880596995
+        second: 1
       data:
         first:
           name: _Shininess
-        second: .0992537737
+        second: 1.20900178
       data:
         first:
           name: _Gloss
-        second: 1
+        second: .696428597
       data:
         first:
           name: _FrezPow
-        second: 1
-      data:
-        first:
-          name: _FrezFalloff
-        second: 1.04477608
-      data:
-        first:
-          name: _EdgeAlpha
         second: 0
       data:
         first:
-          name: _Metalics
+          name: _FrezFalloff
+        second: 1.42857146
+      data:
+        first:
+          name: _EdgeAlpha
         second: 1
+      data:
+        first:
+          name: _Metalics
+        second: 0
       data:
         first:
           name: _Density
@@ -93,11 +93,11 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 0, g: .167883396, b: 1, a: .20784314}
+        second: {r: .0510950089, g: 0, b: 1, a: .20784314}
       data:
         first:
           name: _SpecColor
-        second: {r: 0, g: 1, b: 1, a: 1}
+        second: {r: 0, g: .917647064, b: 1, a: 1}
       data:
         first:
           name: _ReflectColor

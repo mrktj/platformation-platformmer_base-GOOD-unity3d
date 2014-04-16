@@ -50,7 +50,6 @@
      <Compile Include="Assets\6by7\ProBuilder\API Examples\Runtime Editing\Materials\pb_Selection.cs" />
      <Compile Include="Assets\6by7\ProBuilder\API Examples\Runtime Editing\RuntimeEdit.cs" />
      <Compile Include="Assets\6by7\ProGrids\Classes\pg_Util.cs" />
-     <Compile Include="Assets\Pixelplacement\iTweenExtensions.cs" />
      <Compile Include="Assets\ProCore\QuickBrush\QuickBrushClasses\qb_Group.cs" />
      <Compile Include="Assets\ProCore\QuickBrush\QuickBrushClasses\qb_Object.cs" />
      <Compile Include="Assets\ProCore\QuickBrush\QuickBrushClasses\qb_ObjectContainer.cs" />
@@ -63,8 +62,10 @@
      <Compile Include="Assets\game\scripts\controller\PlayerController.cs" />
      <Compile Include="Assets\game\scripts\controller\PlayerPhysics.cs" />
      <Compile Include="Assets\game\scripts\view\CardBoardWall.cs" />
+     <Compile Include="Assets\game\scripts\view\Propeller.cs" />
      <Compile Include="Assets\game\scripts\view\RyanAnimation.cs" />
-     <Compile Include="Assets\iTween\Plugins\iTween.cs" />
+     <Compile Include="Assets\game\scripts\view\iTween.cs" />
+     <Compile Include="Assets\game\scripts\view\iTweenExtensions.cs" />
      <Compile Include="Assets\iTween\Sample\MoveSample.cs" />
      <Compile Include="Assets\iTween\Sample\RotateSample.cs" />
      <Compile Include="Assets\iTween\Sample\SampleInfo.cs" />
